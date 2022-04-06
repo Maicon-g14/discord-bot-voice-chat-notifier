@@ -1,0 +1,29 @@
+{
+  "name": "voice-chat-notifier",
+  "version": "1.0.0",
+  "description": "A Discord bot that notifies when someone enters a voice chat sending a message on a specific channel. Specifies whose chat, who entered is optional.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maicon-g14/discord-bot-voice-chat-notifier.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "utility",
+    "easy-to-use"
+  ],
+  "author": "Maicon-g14",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maicon-g14/discord-bot-voice-chat-notifier/issues"
+  },
+  "homepage": "https://github.com/Maicon-g14/discord-bot-voice-chat-notifier#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0"
+  }
+}
