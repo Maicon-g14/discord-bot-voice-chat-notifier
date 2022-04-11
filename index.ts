@@ -1,35 +1,40 @@
-import DiscordJS, { Intents } from 'discord.js'
-import dotenv from 'dotenv'
-dotenv.config()
+import DiscordJS, { Intents } from 'discord.js';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const client = new DiscordJS.Client({
     intents: [
-        Intents.FLAGS.GUILDS, 
-        Intents.FLAGS.GUILD_MESSAGES
-    ]
-})
+        Intents.FLAGS.GUILDS,
+        Intents.FLAGS.GUILD_MESSAGES,
+    ],
+});
 
 client.on('ready', () => {
-    const message = 'Ohayooo! Asa dayo! \\OwO/'
-    console.log(message)
-})
+    const message = 'Ohayooo! Asa dayo! \\OwO/';
+    console.log(message);
+});
 
-client.on('messageCreate', message => {
-    let command = message.content.split(' ')
-    let response = ''
+client.on('messageCreate', (message) => {
+    const command = message.content.split(' ');
+    let response = '';
 
     if (command && command[0]) {
-        switch(String(command[0])) {
-            case 'ping':
-                response = 'P O N G'
-                break
-            case "umu":
-                response = 'AAAAAAAAaaaaaaaaahh'
-                break
+        switch (String(command[0])) {
+        case 'ping':
+            response = 'P O N G';
+            break;
+        case 'umu':
+            response = 'AAAAAAAAaaaaaaaaahh';
+            break;
+        default:
+            // Do nothing
         }
 
-        response ? message.reply({ content: response }) : ''
+        if (response) {
+            message.reply({ content: response });
+        }
     }
-})
+});
 
-client.login(process.env.TOKEN)
+client.login(process.env.TOKEN);

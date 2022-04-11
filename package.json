@@ -2,7 +2,7 @@
   "name": "voice-chat-notifier",
   "version": "1.0.0",
   "description": "A Discord bot that notifies when someone enters a voice chat sending a message on a specific channel. Specifies whose chat, who entered is optional.",
-  "main": "bot.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,5 +25,12 @@
   "dependencies": {
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
   }
 }
