@@ -1,3 +1,5 @@
+//ponto de entrada apenas
+
 import DiscordJS, { Intents, TextChannel } from 'discord.js';
 import dotenv from 'dotenv';
 
@@ -14,13 +16,30 @@ const client = new DiscordJS.Client({
 });
 
 client.on('ready', () => {
-    const message = 'Ohayooo! Asa dayo! \\OwO/';
+    const message = 'Ohayooo! Komachi-chan hairimasu-yoo! \\OwO/';
     console.log(message);
 
     const channel = (client.channels.cache.get('912493062712872983') as TextChannel);
     channel.send('A WILD KOMACHI HAS RISEN!');
-
+    channel.send('Type `komands` to see available commands');
 });
+
+// function changeNotificationStatus(){
+//     let response = ''
+//     let notification = !this.notification
+
+//     if() {
+//         notification = true;
+//         response += 'and now you be notified when someone enters the voice chat!'
+//     } else {
+//         notification = false;
+//         response += 'and now you won\'t be notified when someone enters the voice chat anymore!'
+//     }
+
+//     return response
+// }
+
+
 
 client.on('messageCreate', async (message) => {
     const command = message.content.split(' ');
@@ -31,8 +50,11 @@ client.on('messageCreate', async (message) => {
         case 'ping':
             response = 'P O N G';
             break;
-        case 'umu':
-            response = 'AAAAAAAAaaaaaaaaahh';
+        case 'komands':
+            response = '';
+            break;
+        case '-umu':
+            response = 'AAAAAAAAaaaaaaaaahh, I humbly accept your pray and now ';
             break;
         default:
             // Do nothing

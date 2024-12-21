@@ -1,0 +1,5 @@
+Currently my available commands are:
+ - `ping` Sends a confirmation if the bot is still alive.
+ - `toggle-notifier` Activates or deactivates personal notification when someone enters or exits a voicechat.
+ - `toggle-global-notifier` Activates or deactivates global notification when someone enters a voicechat.
+ - `view-status` Shows the Global Notifier and your Personal Notifier statuses. 

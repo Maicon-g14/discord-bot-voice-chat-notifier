@@ -1,6 +1,7 @@
 # Voice chat notifier [Discord bot]
 
-A Discord bot that notifies when someone enters a voice chat sending a message on its specific channel. 
-Specifies whose voice chat the person has entered, who entered is optional.
+A Typescript JS Discord bot that notifies personally or globally when someone enters a voice chat. 
+It is capable of specify whose voice chat the person has entered, who entered is optional.
 
 Start command: `npx ts-node index.ts`
+

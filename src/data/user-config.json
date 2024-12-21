@@ -1,0 +1,20 @@
+
+{
+    "_comment": "configuracoes dos usuarios, cada usuario tem a sua. a principio seria par de chaves-valores, apos trocar por um db para sigilo do id do user",
+    "servers": [
+        {
+            "id": "912493062712872983",
+            "globalNotifier": "disable"
+        }
+    ],
+    "users": [
+        {
+            "id":"311332218351910913",
+            "personalNotifier": "enable"
+        },
+        {
+            "id":"",
+            "personalNotifier": ""
+        }
+    ]    
+}
